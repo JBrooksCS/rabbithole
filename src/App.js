@@ -7,31 +7,49 @@ import Hole from "./components/hole";
 class App extends Component {
   state = {
     level : 0,
-    holes : [0]
+    holes : [["Yes"]] 
   }
 
   travelDown =()=> {
+
     console.log('Traveling Down..')
-    // let boxes = []
     console.log(this.state.level + 1)
+    this.createTree();
 
     this.setState({
       level : this.state.level + 1
     })
   }
-  populateHoles=()=>{
-    
-    let holesTemp = this.state.level
-    
-    for(let i = 0; i < this.state.level + 1; i++ ){
-      
 
-      // holes.push(i)
+  createTree =()=>{
+
+    let numLevels = 20
+    let newArray = []
+    let newHoles = []
+
+    //For each level
+    for(let j = 0; j < numLevels; j++){
+
+      newArray[j] = []
+      // newArray[Math.floor(Math.random()*newArray.length)] = "Yes"
     }
+    newArray.forEach((element, index) => {
+      
+      for(let i = 0; i <= index; i++){
+        newArray[index].push("No")
+      }
+    
+    });
+
+    console.log(newArray)
+
+    
+  
   }
 
+
 render(){
-  let holes = this.populateHoles()
+
 
   return (
     <div className="App">
