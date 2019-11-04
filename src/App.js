@@ -14,10 +14,16 @@ class App extends Component {
 
     console.log('Traveling Down..')
     console.log(this.state.level + 1)
-    this.createTree();
 
     this.setState({
       level : this.state.level + 1
+    })
+  }
+  travelToStart =()=> {
+    console.log('Traveling Up..')
+
+    this.setState({
+      level : 0
     })
   }
 
@@ -48,20 +54,29 @@ class App extends Component {
     })
   }
 
+  componentDidMount =()=>{
+    this.createTree();
+
+    console.log("Component Mounted")
+  }
+
+
 render(){
 
   const items = []
 
   for (const [index, value] of this.state.holes[this.state.level].entries()) {
-    items.push(<Hole key={index}
+    items.push(<Hole key={index} door={value}
       travelDown={this.travelDown}
-    >{value}</Hole>)
+      travelToStart={this.travelToStart}
+    />)
   }
-
 
   return (
     <div className="App">
       <header className="App-header">
+
+        
         {this.state.level === 0 ? 
         
         <Home travelDown={this.travelDown} /> 
