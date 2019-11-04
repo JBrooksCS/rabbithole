@@ -13,7 +13,7 @@ export class home extends Component {
                     style={{ fontSize: "15em", marginTop: "-198px" }}>^</p>
                     
                     <div 
-                    style={{ backgroundColor: "coral", width: "200px", height: "200px", marginTop: "-23em" }}>
+                    style={{ backgroundColor: "coral", width: "6em", height: "6em", marginTop: "-23em" }}>
                     </div>
                 </div>
             </div>

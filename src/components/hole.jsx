@@ -14,7 +14,7 @@ export class hole extends Component {
                     style={{ fontSize: "15em", marginTop: "-50px" }}>^</p> */}
                     
                     <div 
-                    style={{ backgroundColor: "coral", width: "200px", height: "200px", 
+                    style={{ backgroundColor: "coral", width: "10em", height: "10em", margin: "2em"
                     // marginTop: "-23em" 
                     }}>
                     </div>
