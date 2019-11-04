@@ -26,7 +26,7 @@ class App extends Component {
       furthestLevelReached : furthest
     })
   }
-  
+
   travelToStart =()=> {
     console.log('Traveling Up..')
 
@@ -84,7 +84,9 @@ render(){
   <div className="App">
       <header className="App-header">
       
-      <div style={{margin: "2em"}}> Furthest You've Gone{" ~"+this.state.furthestLevelReached}</div>
+      <div 
+      className="levelTracker"
+      style={{margin: "2em"}}> You've Reached Level{" ~"+this.state.furthestLevelReached}</div>
 
         
         {this.state.level === 0 ? 

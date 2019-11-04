@@ -12,7 +12,7 @@ export class home extends Component {
                     <p 
                     
                     
-                    style={{ fontSize: "15em", marginTop: "-198px" }}>^</p>
+                    style={{ fontSize: "15em", marginTop: "-198px", fontFamily: "Times New Roman" }}>^</p>
                     
                     <div 
                     className="unit"

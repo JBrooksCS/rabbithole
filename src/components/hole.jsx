@@ -15,7 +15,7 @@ export class hole extends Component {
                                 backgroundColor: "coral", width: "10em", height: "10em", margin: "2em"
                                 // marginTop: "-23em" 
                             }}>
-                            YES
+                            {/* YES */}
                         </div>
                         :
                         <div onClick={this.props.travelToStart}
@@ -24,7 +24,7 @@ export class hole extends Component {
                                 backgroundColor: "coral", width: "10em", height: "10em", margin: "2em"
                                 // marginTop: "-23em" 
                             }}>
-                            NO
+                            {/* NO */}
                         </div>
 
                     }

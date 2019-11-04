@@ -1,10 +1,18 @@
 .App {
   text-align: center;
+  
 }
 
 .App-logo {
   height: 40vmin;
 }
+
+.levelTracker{
+  font-family: 'Permanent Marker', cursive;
+  color: rgb(152, 84, 1);
+
+}
+
 
 .App-header {
   background-color:rgb(245, 188, 127);
