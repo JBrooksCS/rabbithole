@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import '../App.css';
 
 export class home extends Component {
     render() {
@@ -7,12 +8,14 @@ export class home extends Component {
                 this.props.travelDown
                 // console.log("HI")
             }>
-                <div >
+                <div  >
                     <p 
+                    
                     
                     style={{ fontSize: "15em", marginTop: "-198px" }}>^</p>
                     
                     <div 
+                    className="unit"
                     style={{ backgroundColor: "coral", width: "10em", height: "10em", marginTop: "-23em" }}>
                     </div>
                 </div>

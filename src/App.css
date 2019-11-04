@@ -20,3 +20,8 @@
 .App-link {
   color: #09d3ac;
 }
+
+.unit {
+  box-shadow: 5px 10px 10px #888888;
+  border-radius: 5px;
+}

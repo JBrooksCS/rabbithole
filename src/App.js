@@ -7,7 +7,8 @@ import Hole from "./components/hole";
 class App extends Component {
   state = {
     level : 0,
-    holes : [["Yes"]] 
+    holes : [["Yes"]],
+    furthestLevelReached : 0
   }
 
   travelDown =()=> {
@@ -15,10 +16,17 @@ class App extends Component {
     console.log('Traveling Down..')
     console.log(this.state.level + 1)
 
+    let furthest = this.state.furthestLevelReached
+    if (this.state.level + 1 > furthest){
+      furthest += 1
+    }
+
     this.setState({
-      level : this.state.level + 1
+      level : this.state.level + 1,
+      furthestLevelReached : furthest
     })
   }
+  
   travelToStart =()=> {
     console.log('Traveling Up..')
 
@@ -72,9 +80,11 @@ render(){
     />)
   }
 
-  return (
-    <div className="App">
+    return (
+  <div className="App">
       <header className="App-header">
+      
+      <div style={{margin: "2em"}}> Furthest You've Gone{" ~"+this.state.furthestLevelReached}</div>
 
         
         {this.state.level === 0 ? 
