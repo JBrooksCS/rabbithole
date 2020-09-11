@@ -10,26 +10,35 @@
 .levelTracker{
   font-family: 'Permanent Marker', cursive;
   color: rgb(152, 84, 1);
-
+  height: 8px;
 }
 
+html{
+  background-color:rgb(245, 188, 127);
+
+}
 
 .App-header {
-  background-color:rgb(245, 188, 127);
-  min-height: 100vh;
+  background-color:rgb(249, 199, 138);
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(8px + 2vmin);
   color: rgb(254, 152, 75);
 }
-
-.App-link {
-  color: #09d3ac;
+.holesDiv{
+  width: 100%; 
+  height: 50%;  
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: space-evenly;
 }
 
 .unit {
   box-shadow: 5px 10px 10px #888888;
   border-radius: 5px;
+  background-color: coral;
+  width: 20em;
+  height: 20em;
+  margin: 2em;
+  
 }

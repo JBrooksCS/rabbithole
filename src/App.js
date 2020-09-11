@@ -51,11 +51,15 @@ class App extends Component {
         newArray[index].push("No")
       }
       //Take one random selection from the array at the current index, and set it to Yes
-      newArray[index][Math.floor(Math.random()*newArray[index].length)] = "Yes"
+      let secondDimensionIndex = Math.floor(Math.random()*newArray[index].length);
+      newArray[index][secondDimensionIndex] = "Yes"
+      console.log("Map : ", secondDimensionIndex + 1)
     })
     //Probably a good idea to hard code the first element to be Yes
     newArray[0] = ["Yes"]
+
     console.log(newArray)
+    
     //Add to state
     this.setState({
       holes : newArray
@@ -67,7 +71,6 @@ class App extends Component {
 
     console.log("Component Mounted")
   }
-
 
 render(){
 
@@ -87,19 +90,22 @@ render(){
       <div 
       className="levelTracker"
       style={{margin: "2em"}}> You've Reached Level{" ~"+this.state.furthestLevelReached}</div>
+      </header>
 
         
         {this.state.level === 0 ? 
-        
-        <Home travelDown={this.travelDown} /> 
+        <div className="holesDiv">
+          <Home travelDown={this.travelDown} /> 
+        </div>
         
         :
 
-          <div style={{width: "80%", height:"80%", flexWrap:"wrap", display: "flex", flexDirection:"row", justifyContent:"space-around"}}>{items}</div>
+        <div className="holesDiv">
+          {items}
+        </div>
              
         }
         
-      </header>
     </div>
   );
 }

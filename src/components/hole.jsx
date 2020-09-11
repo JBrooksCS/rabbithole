@@ -11,19 +11,13 @@ export class hole extends Component {
                         <div
                             className="unit"
                             onClick={this.props.travelDown}
-                            style={{
-                                backgroundColor: "coral", width: "10em", height: "10em", margin: "2em"
-                                // marginTop: "-23em" 
-                            }}>
+                        >
                             {/* YES */}
                         </div>
                         :
                         <div onClick={this.props.travelToStart}
                             className="unit"
-                            style={{
-                                backgroundColor: "coral", width: "10em", height: "10em", margin: "2em"
-                                // marginTop: "-23em" 
-                            }}>
+                            >
                             {/* NO */}
                         </div>
 

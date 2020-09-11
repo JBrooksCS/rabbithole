@@ -12,11 +12,11 @@ export class home extends Component {
                     <p 
                     
                     
-                    style={{ fontSize: "15em", marginTop: "-198px", fontFamily: "Times New Roman" }}>^</p>
+                    style={{ fontSize: "15em", marginTop: "-198px", fontFamily: "Times New Roman" }}></p>
                     
                     <div 
                     className="unit"
-                    style={{ backgroundColor: "coral", width: "10em", height: "10em", marginTop: "-23em" }}>
+                    >
                     </div>
                 </div>
             </div>
